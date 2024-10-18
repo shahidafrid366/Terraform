@@ -1,16 +1,16 @@
 variable "subscription_id" {
   description = "Azure Subscription ID for your account"
-  type = string
+  type        = string
 }
 
 variable "client_id" {
   description = "Client ID for the Service Portal"
-  type = string
+  type        = string
 }
 
 variable "client_secret" {
- description = "Azure Client Secret for Service Principal" 
- type = string
+  description = "Azure Client Secret for Service Principal"
+  type        = string
 }
 
 variable "tenant_id" {
@@ -20,86 +20,86 @@ variable "tenant_id" {
 
 variable "resource_group_name" {
   description = "Enter Your Resource Group Name"
-  type = string
+  type        = string
 }
 
 variable "location" {
   description = "Enter Location For Your Resource"
-  type = string
+  type        = string
 }
 
 variable "vnet_name" {
   description = "Enter Name For Your Virtual Name"
-  type = string
+  type        = string
 }
 
 variable "vnet_address_space" {
   description = "Address Space for your Virtual Network"
-  type = string
+  type        = string
 }
 
 variable "subnet_name" {
   description = "Enter Name For Subnet"
-  type = string
+  type        = string
 }
 
 variable "subnet_prefix" {
   description = "Enter Subnet Prefix"
-  type = string
+  type        = string
 }
 
 variable "nic_name" {
   description = "Enter Name For NIC"
-  type = string
+  type        = string
 }
 
 variable "vm_name" {
   description = "Name of your Virtual Machine"
-  type = string
+  type        = string
 }
 
 variable "vm_size" {
   description = "Enter Your VM Size"
-  type = string
+  type        = string
 }
 
 variable "admin_username" {
   description = "Enter your username"
-  type = string
+  type        = string
 }
 
 variable "admin_password" {
   description = "Enter Your Password"
-  type = string
-  sensitive = true
+  type        = string
+  sensitive   = true
 }
 
 variable "os_disk_caching" {
   description = "Enter Caching type for OS disk"
-  type = string
+  type        = string
 }
 
 variable "os_disk_storage_account_type" {
   description = "Enter the storage type"
-  type = string
+  type        = string
 }
 
 variable "vm_publisher" {
   description = "Publisher of VM's OS image"
-  type = string
+  type        = string
 }
 
 variable "vm_offer" {
   description = "Offer of VM's Image"
-  type = string
+  type        = string
 }
 
 variable "vm_sku" {
   description = "SKU of VMs OS image"
-  type = string
+  type        = string
 }
 
 variable "vm_version" {
   description = "Version of VMs OS image"
-  type = string
+  type        = string
 }

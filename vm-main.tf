@@ -39,13 +39,13 @@ resource "azurerm_network_interface" "tf_nic" {
 }
 
 resource "azurerm_linux_virtual_machine" "tf_vm" {
-  name                  = "tfvm"
-  resource_group_name   = azurerm_resource_group.tf_rg.name
-  location              = azurerm_resource_group.tf_rg.location
-  size                  = "Standard_DS1_v2"
-  admin_username        = "adminuser"
-  admin_password        = "Password@123"
-  network_interface_ids = [azurerm_network_interface.tf_nic.id]
+  name                            = "tfvm"
+  resource_group_name             = azurerm_resource_group.tf_rg.name
+  location                        = azurerm_resource_group.tf_rg.location
+  size                            = "Standard_DS1_v2"
+  admin_username                  = "adminuser"
+  admin_password                  = "Password@123"
+  network_interface_ids           = [azurerm_network_interface.tf_nic.id]
   disable_password_authentication = false
 
   os_disk {
